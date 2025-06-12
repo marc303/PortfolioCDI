@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/chara.css" />
+    <script src="../javascript/script.js"></script>
+    <title>Astrologie Orion</title>
+  </head>
+  <body onload="modifiedLast()">
+    <header>
+      <div class="logo">
+        <img src="../img/logo-no-background.png" alt="Logo Astrologie Orion" />
+      </div>
+    </header>
+    <div class="navbar">
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a class="active">Charactéristiques des signes</a></li>
+        <li><a href="traits.html">Traits des signes</a></li>
+        <li><a href="form.html">Horoscope du jour</a></li>
+        <li><a href="mailto:proprietaire@info_orion.ca">Contactez-nous</a></li>
+        <li>
+          <form>
+            <input type="text" placeholder="Recherche.." name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </li>
+      </ul>
+    </div>
+    <section>
+      <div class="sidebar">
+        <nav>
+          <h4>Consultez un signe</h4>
+          <ul>
+            <li>
+              <a href="signes/belier.html"
+                ><img src="../img/glyphs/Belier.gif" class="icon" />Bélier</a
+              >
+            </li>
+            <li>
+              <a href="signes/taureau.html"
+                ><img src="../img/glyphs/Taureau.gif" class="icon" />Taureau</a
+              >
+            </li>
+            <li>
+              <a href="signes/gemeaux.html"
+                ><img src="../img/glyphs/Gemeaux.gif" class="icon" />Gémeaux</a
+              >
+            </li>
+            <li>
+              <a href="signes/cancer.html"
+                ><img src="../img/glyphs/CANCER.gif" class="icon" />Cancer</a
+              >
+            </li>
+            <li>
+              <a href="signes/lion.html"
+                ><img src="../img/glyphs/Leo.gif" class="icon" />Lion</a
+              >
+            </li>
+            <li>
+              <a href="signes/vierge.html"
+                ><img src="../img/glyphs/Vierge.gif" class="icon" />Vierge</a
+              >
+            </li>
+            <li>
+              <a href="signes/balance.html"
+                ><img src="../img/glyphs/Balance.gif" class="icon" />Balance</a
+              >
+            </li>
+            <li>
+              <a href="signes/scorpion.html"
+                ><img
+                  src="../img/glyphs/Scorpion.gif"
+                  class="icon"
+                />Scorpion</a
+              >
+            </li>
+            <li>
+              <a href="signes/sagittaire.html"
+                ><img
+                  src="../img/glyphs/Sagittaire.gif"
+                  class="icon"
+                />Sagittaire</a
+              >
+            </li>
+            <li>
+              <a href="signes/capricorne.html"
+                ><img
+                  src="../img/glyphs/Capricorne.gif"
+                  class="icon"
+                />Capricorne</a
+              >
+            </li>
+            <li>
+              <a href="signes/verseau.html"
+                ><img src="../img/glyphs/Verseau.gif" class="icon" />Verseau</a
+              >
+            </li>
+            <li>
+              <a href="signes/poisson.html"
+                ><img src="../img/glyphs/Poisson.gif" class="icon" />Poissons</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <img id="wheel" src="../img/wheel.png" alt="12 signes du zodiaque" />
+      </div>
+      <main>
+        <table>
+          <tr>
+            <th colspan="2">Charactéristiques des signes</th>
+          </tr>
+          <tr>
+            <td>
+              <img src="../img/glyphs/Belier.gif" alt="Glyphe du Bélier" />
+              <p>Bélier : 21 mars - 20 avril</p>
+              <ul>
+                <li><span class="bold">Sexe: </span>Masculin</li>
+                <li><span class="bold">Couleur(s): </span>Orange, Rouge</li>
+                <li><span class="bold">Métaux: </span>Fer, Acier</li>
+                <li><span class="bold">Élément: </span>Feu</li>
+                <li>
+                  <span class="bold">Fleur(s): </span>Aubépine, jasmin étoilé
+                </li>
+                <li><span class="bold">Astre(s): </span>Mars</li>
+                <li><span class="bold">Pierres: </span>Diamant, rubis</li>
+                <li>
+                  <span class="bold">Saison: </span>Premier signe du
+                  printemps(cardinal)
+                </li>
+              </ul>
+            </td>
+            <td>
+              <img src="../img/glyphs/Taureau.gif" alt="Glyphe du Taureau" />
+              <p>Taureau : 21 avril - 21 mai</p>
+              <ul>
+                <li><span class="bold">Sexe: </span>Féminin</li>
+                <li><span class="bold">Couleur(s): </span>Vert, rose saumon</li>
+                <li><span class="bold">Métaux: </span>Cuivre(métal rouge)</li>
+                <li><span class="bold">Élément: </span>Terre</li>
+                <li>
+                  <span class="bold">Fleur(s): </span>Muguet(fleur du bonheur)
+                </li>
+                <li><span class="bold">Astre(s): </span>Vénus</li>
+                <li>
+                  <span class="bold">Pierres: </span>Émeraude, rubellite,
+                  tourmaline rose
+                </li>
+                <li>
+                  <span class="bold">Saison: </span>Deuxième signe du printemps
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="../img/glyphs/Gemeaux.gif" alt="Glyphe des Gémeaux" />
+              <p>Gémeaux : 22 mai - 21 juin</p>
+              <ul>
+                <li><span class="bold">Sexe: </span>Masculin</li>
+                <li>
+                  <span class="bold">Couleur(s): </span>Brun marron/rouge, Jaune
+                </li>
+                <li><span class="bold">Métaux: </span>Mercure(vif argent)</li>
+                <li><span class="bold">Élément: </span>Air</li>
+                <li><span class="bold">Fleur(s): </span>Muguet, Tulipe</li>
+                <li><span class="bold">Astre(s): </span>Mercure</li>
+                <li>
+                  <span class="bold">Pierres: </span>L'oeil-de-tigre, ambre,
+                  <br />
+                  obsidienne acajou, agate
+                </li>
+                <li>
+                  <span class="bold">Saison: </span>Troisième signe du printemps
+                </li>
+              </ul>
+            </td>
+            <td>
+              <img src="../img/glyphs/CANCER.gif" alt="Glyphe du Cancer" />
+              <p>Cancer : 22 juin - 22 juillet</p>
+              <ul>
+                <li><span class="bold">Sexe: </span>Féminin</li>
+                <li>
+                  <span class="bold">Couleur(s): </span>Teintes pâles, Blancs
+                  chatoyants
+                </li>
+                <li><span class="bold">Métaux: </span>Argent</li>
+                <li><span class="bold">Élément: </span>Eau</li>
+                <li><span class="bold">Fleur(s): </span>Lotus Bleu</li>
+                <li><span class="bold">Astre(s): </span>Lune</li>
+                <li>
+                  <span class="bold">Pierres: </span>Perle, sélénite, pierre de
+                  lune, <br />
+                  opale blanche
+                </li>
+                <li>
+                  <span class="bold">Saison: </span>Premier signe de
+                  l'été(cardinal)
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="../img/glyphs/Leo.gif" alt="Glyphe du Lion" />
+              <p>Lion : 23 juillet - 22 août</p>
+              <ul>
+                <li><span class="bold">Sexe: </span>Masculin</li>
+                <li>
+                  <span class="bold">Couleur(s): </span>Jaune, Teintes d'ocre et
+                  d'or
+                </li>
+                <li><span class="bold">Métaux: </span>Or, Argent</li>
+                <li><span class="bold">Élément: </span>Feu</li>
+                <li>
+                  <span class="bold">Fleur(s): </span>Tournesol, Oeillet d'Inde
+                  <br />
+                  à petites fleurs
+                </li>
+                <li><span class="bold">Astre(s): </span>Soleil</li>
+                <li>
+                  <span class="bold">Pierres: </span>Diamant, citrine, corail,
+                  rubis
+                </li>
+                <li>
+                  <span class="bold">Saison: </span>Deuxième signe de l'été
+                </li>
+              </ul>
+            </td>
+            <td>
+              <img src="../img/glyphs/Vierge.gif" alt="Glyphe de la Vierge" />
+              <p>Vierge : 23 août - 22 septembre</p>
+              <ul>
+                <li><span class="bold">Sexe: </span>Féminin</li>
+                <li>
+                  <span class="bold">Couleur(s): </span>Terracotta, Ocre, Vert,
+                  <br />
+                  Jaune, Teintes orangés/rouge-brun, <br />
+                  Bleu marine, Turquoise
+                </li>
+                <li>
+                  <span class="bold">Métaux: </span>Métal alcalinoterreux,
+                  Nickel
+                </li>
+                <li><span class="bold">Élément: </span>Terre</li>
+                <li><span class="bold">Fleur(s): </span>Orchidée. Rose</li>
+                <li><span class="bold">Astre(s): </span>Mercure</li>
+                <li>
+                  <span class="bold">Pierres: </span>Ambre, péridot, agate verte
+                  <br />
+                  ou brun doré, cornaline, saphir jaune, <br />
+                  turquoise
+                </li>
+                <li>
+                  <span class="bold">Saison: </span>Troisième signe de l'été
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="../img/glyphs/Balance.gif" alt="Glyphe de la Balance" />
+              <p>Balance : 23 septembre - 22 octobre</p>
+              <ul>
+                <li><span class="bold">Sexe: </span>Masculin</li>
+                <li>
+                  <span class="bold">Couleur(s): </span>Beige, Blanc, Noir,
+                  <br />
+                  Teintes de lilas ou Rose fuschia,
+                  <br />
+                  Teintes entre gris pâle et
+                  <br />
+                  charbons de bois
+                </li>
+                <li>
+                  <span class="bold">Métaux: </span>Titane, Cuivre, Chrome
+                </li>
+                <li><span class="bold">Élément: </span>Air</li>
+                <li>
+                  <span class="bold">Fleur(s): </span>Hydrangée, Orchidée, Rose
+                </li>
+                <li><span class="bold">Astre(s): </span>Vénus</li>
+                <li>
+                  <span class="bold">Pierres: </span>Jade, topaze rose et
+                  <br />
+                  royale(jaune), opale blanche,
+                  <br />
+                  chrysolite(péridot)
+                </li>
+                <li>
+                  <span class="bold">Saison: </span>Premier signe de <br />
+                  l'autonome(cardinal)
+                </li>
+              </ul>
+            </td>
+            <td>
+              <img src="../img/glyphs/Scorpion.gif" alt="Glyphe du Scorpion" />
+              <p>Scorpion : 23 octobre - 22 novembre</p>
+              <ul>
+                <li><span class="bold">Sexe: </span>Féminin</li>
+                <li>
+                  <span class="bold">Couleur(s): </span>Rouge, Blanc, Noir,
+                  <br />
+                  Jaune
+                </li>
+                <li>
+                  <span class="bold">Métaux: </span>Magnésium, Fer, Métal,
+                  <br />
+                  Argent
+                </li>
+                <li><span class="bold">Élément: </span>Eau</li>
+                <li>
+                  <span class="bold">Fleur(s): </span>Rhododendron, Orchidée,
+                  <br />
+                  Géranium
+                </li>
+                <li><span class="bold">Astre(s): </span>Mars, Pluton</li>
+                <li>
+                  <span class="bold">Pierres: </span>Grenat rouge, diamant noir,
+                  <br />
+                  topaze jaune
+                </li>
+                <li>
+                  <span class="bold">Saison: </span>Deuxième signe de l'autonome
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                src="../img/glyphs/Sagittaire.gif"
+                alt="Glyphe du Sagittaire"
+              />
+              <p>Sagittaire : 23 novembre - 21 décembre</p>
+              <ul>
+                <li><span class="bold">Sexe: </span>Masculin</li>
+                <li>
+                  <span class="bold">Couleur(s): </span>Différents pourpre,
+                  <br />
+                  violet et bleu foncé. Rouge et Noir
+                </li>
+                <li><span class="bold">Métaux: </span>Étain, Cassitérite</li>
+                <li><span class="bold">Élément: </span>Feu</li>
+                <li>
+                  <span class="bold">Fleur(s): </span>Oeillet(Fleur des dieux)
+                </li>
+                <li><span class="bold">Astre(s): </span>Jupiter</li>
+                <li><span class="bold">Pierres: </span>Améthyste, Citrine</li>
+                <li>
+                  <span class="bold">Saison: </span>Troisième signe de
+                  l'autonome
+                </li>
+              </ul>
+            </td>
+            <td>
+              <img
+                src="../img/glyphs/Capricorne.gif"
+                alt="Glyphe du Capricorne"
+              />
+              <p>Capricorne : 22 décembre - 20 janvier</p>
+              <ul>
+                <li><span class="bold">Sexe: </span>Féminin</li>
+                <li>
+                  <span class="bold">Couleur(s): </span>Noir, Blanc, Beige,
+                  Gris, Taupe
+                </li>
+                <li><span class="bold">Métaux: </span>Plomb</li>
+                <li><span class="bold">Élément: </span>Terre</li>
+                <li>
+                  <span class="bold">Fleur(s): </span>Sortes de lierres, pensées
+                  sauvages
+                </li>
+                <li><span class="bold">Astre(s): </span>Saturne</li>
+                <li>
+                  <span class="bold">Pierres: </span>Onyx, jais, quartz fumé
+                </li>
+                <li>
+                  <span class="bold">Saison: </span>Premier signe de
+                  l'hiver(cardinal)
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="../img/glyphs/Verseau.gif" alt="Glyphe du Verseau" />
+              <p>Verseau : 21 janvier - 19 février</p>
+              <ul>
+                <li><span class="bold">Sexe: </span>Masculin</li>
+                <li>
+                  <span class="bold">Couleur(s): </span>Indigo, Violet, Gris
+                  <br />
+                  bleu, Marine, Les gris, Les
+                  <br />
+                  rouges sombres et chics, Noir,
+                  <br />
+                  Blanc
+                </li>
+                <li><span class="bold">Métaux: </span>Uranium, Aluminium</li>
+                <li><span class="bold">Élément: </span>Air</li>
+                <li><span class="bold">Fleur(s): </span>Orchidée, lys blanc</li>
+                <li><span class="bold">Astre(s): </span>Uranus</li>
+                <li><span class="bold">Pierres: </span>Grenat, angélite</li>
+                <li>
+                  <span class="bold">Saison: </span>Deuxième signe de l'hiver
+                </li>
+              </ul>
+            </td>
+            <td>
+              <img src="../img/glyphs/Poisson.gif" alt="Glyphe du Poisson" />
+              <p>Poissons : 20 février - 20 mars</p>
+              <ul>
+                <li><span class="bold">Sexe: </span>Féminin</li>
+                <li>
+                  <span class="bold">Couleur(s): </span>Teintes de bleu,
+                  <br />
+                  Indigo, Turquoise, Teintes de
+                  <br />
+                  violet, Blanc, Noir
+                </li>
+                <li>
+                  <span class="bold">Métaux: </span>Palladium, Platine,
+                  <br />
+                  Iridium, Rhodium, Osmium,
+                  <br />
+                  Ruthénium
+                </li>
+                <li><span class="bold">Élément: </span>Eau</li>
+                <li>
+                  <span class="bold">Fleur(s): </span>Nymphéacées (Nymphaea,
+                  Nuphar)
+                </li>
+                <li><span class="bold">Astre(s): </span>Jupiter, Neptune</li>
+                <li>
+                  <span class="bold">Pierres: </span>Saphir, agate bleue,
+                  turquoise
+                </li>
+                <li>
+                  <span class="bold">Saison: </span>Troisième signe de l'hiver
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </main>
+    </section>
+    <footer>
+      <p>Ce document a été modifié en dernier le: <span id="date"></span></p>
+      <p id="copyright">&copy; 2022 Astrologie Orion</p>
+    </footer>
+  </body>
+</html>

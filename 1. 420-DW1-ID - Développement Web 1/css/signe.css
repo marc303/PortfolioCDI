@@ -1,0 +1,88 @@
+main {
+  width: 80%;
+  height: 950px;
+  overflow-y: scroll;
+}
+main h3 {
+  font-size: 1.5em;
+  margin: 50px 0 0 50px;
+  color: #4c408e;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.titre {
+  text-align: center;
+  text-decoration: underline;
+  color: #0c1445;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.description {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.description img {
+  height: 200px;
+  margin: 10px;
+  padding: 25px;
+}
+.description p {
+  vertical-align: middle;
+  padding: 15px;
+}
+.chara p {
+  margin-left: 50px;
+  padding: 10px;
+}
+.bold {
+  font-weight: bold;
+}
+.trait {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.trait dl {
+  display: block;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.trait dl dt {
+  font-weight: bold;
+  padding: 5px;
+}
+.trait dl dd {
+  display: list-item;
+  list-style-type: disc;
+  padding: 10px;
+}
+.mainfooter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.icon {
+  width: 20px;
+}
+.prev {
+  display: block;
+  margin-left: 10px;
+  margin-right: auto;
+}
+.next {
+  display: block;
+  margin-left: auto;
+  margin-right: 10px;
+}
+.sidebar ul li.active {
+  background-color: #0c1445;
+}
+.sidebar ul li.active a {
+  color: white;
+}
