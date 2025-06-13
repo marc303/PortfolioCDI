@@ -1,0 +1,32 @@
+﻿@using BiblioPortCartier.ViewModels;
+@model BiblioViewModel;
+
+@{
+    ViewData["Title"] = "Liste des retards";
+    Layout = "~/Views/Shared/_LibraryLayout.cshtml";
+}
+
+<h2 class="text-primary text-center mt-5">Liste des retards</h2>
+@foreach (Loan obj in Model.LateDocs)
+{
+    <div class="card text-center mt-5">
+        <div class="card-header">
+            <h5>@obj.Document.Title</h5>
+        </div>
+        <div>
+            <p>Nom du membre : @obj.Member.FullName</p>
+            <p>Date d'emprunt : @obj.BorrowedDate</p>
+            <p>Date de retour prévue: @obj.ScheduledReturnDate</p>
+        </div>
+        <div class="card-footer text-body-secondary">
+            <div class="row">
+                <div class="col-6">
+                    Code du document : @obj.DocumentCode;
+                </div>
+                <div class="col-6">
+                    Code du membre : @obj.MemberId
+                </div>
+            </div>
+        </div>
+    </div>
+}

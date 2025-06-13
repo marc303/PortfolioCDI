@@ -1,0 +1,31 @@
+﻿@using BiblioPortCartier.ViewModels;
+@model BiblioViewModel;
+
+@{
+    ViewData["Title"] = "Liste des réservations";
+    Layout = "~/Views/Shared/_LibraryLayout.cshtml";
+}
+
+<h2 class="text-primary text-center mt-5">Liste des réservations</h2>
+@foreach (Reservation obj in Model.ReservationsMember)
+{
+    <div class="card text-center mt-5">
+        <div class="card-header">
+            <h5>@obj.Document.Title</h5>
+        </div>
+        <div>
+            <p>Nom du membre : @obj.Member.FullName</p>
+            <p>Date de réservation : @obj.ReservationDate</p>
+        </div>
+        <div class="card-footer text-body-secondary">
+            <div class="row">
+                <div class="col-6">
+                    Code du document : @obj.DocumentCode;
+                </div>
+                <div class="col-6">
+                    Code du membre : @obj.MemberId
+                </div>
+            </div>
+        </div>
+    </div>
+}

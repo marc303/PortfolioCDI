@@ -1,0 +1,68 @@
+﻿@using BiblioPortCartier.ViewModels;
+@model BiblioViewModel;
+
+@{
+    ViewData["Title"] = "Prêts/Réservations d'un membre";
+    Layout = "~/Views/Shared/_LibraryLayout.cshtml";
+}
+
+<h2 class="text-center mt-5">Prêts et réservations - @Model.Member.FullName</h2>
+<div class="accordion accordion-flush mt-5" id="accordionFlushExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Prêts :
+            </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            @if(!Model.LoansMember.Any())
+            {
+                <div class="accordion-body text-center">
+                    <h1 class="text-danger">Ce membre n'a aucun prêt.</h1>
+                </div>
+            }
+            else
+            {
+                foreach (Loan item in Model.LoansMember)
+                {
+                    <div class="accordion-body text-center">
+                        <h3 class="mb-3">@item.Document.Title</h3>
+                        <p>Code du document : @item.DocumentCode</p>
+                        <p>Date d'emprunt : @item.BorrowedDate</p>
+                        <p>Date de retour prévue: @item.ScheduledReturnDate</p>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Réservations :
+            </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            @if (!Model.ReservationsMember.Any())
+            {
+                <div class="accordion-body text-center">
+                    <h1 class="text-danger">Ce membre n'a aucune réservations.</h1>
+                </div>
+
+            }
+            else
+            {
+                foreach (Reservation item in Model.ReservationsMember)
+                {
+                    <div class="accordion-body text-center">
+                        <h3 class="mb-3">@item.Document.Title</h3>
+                        <p>Code du document : @item.DocumentCode</p>
+                        <p>Date de réservation : @item.ReservationDate</p>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+<form method="post" class="mt-5">
+    <button class="btn btn-primary w-100" asp-controller="Library" asp-action="MembersList">Retour</button>
+</form>

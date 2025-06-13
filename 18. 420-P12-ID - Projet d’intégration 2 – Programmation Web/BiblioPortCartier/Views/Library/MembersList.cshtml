@@ -1,0 +1,43 @@
+﻿@using BiblioPortCartier.ViewModels;
+@model BiblioViewModel;
+
+@{
+    ViewData["Title"] = "Liste de membres";
+    Layout = "~/Views/Shared/_LibraryLayout.cshtml";
+}
+
+
+<div class="row pt-4">
+    <div class="col-4">
+        <h2 class="text-primary">Liste des membres</h2>
+    </div>
+    <div class="col-8">
+        <form class="d-flex">
+            <input asp-for=SearchString class="form-control me-sm-2" type="search" placeholder="Recherche" id="searchField" />
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit" asp-controller="Library" asp-action="MembersList">Rechercher</button>
+        </form>
+    </div>
+</div>
+
+@foreach(Member obj in Model.Membres)
+{
+    <div class="card text-center mt-5">
+        <div class="card-header">
+            <h5>@obj.FullName</h5>
+        </div>
+        <div>
+            <p>Code de membre : @obj.Id</p>
+            <p>Sexe : @obj.Gender</p>
+            <p>Date de naissance : @obj.BirthdayDate.ToLongDateString()</p>
+            <p>Adresse : @obj.Address.FullAddress</p>
+            <p>Courriel : @obj.Email</p>
+            <p>Numéro de téléphone : @obj.PhoneNumber</p>
+        </div>
+        <div class="card-footer text-body-secondary">
+            Date d'inscription : @obj.RegisterDate.ToLongDateString()
+        </div>
+    </div>
+    <form method="post" class="mt-4 mb-4">
+        <button class="btn btn-primary w-100" asp-controller="Library" asp-action="LoansReservationsMember" asp-route-id="@obj.Id">Consulter les prêts et réservations du membre</button>
+    </form>
+}
