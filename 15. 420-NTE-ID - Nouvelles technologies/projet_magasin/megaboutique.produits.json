@@ -1,0 +1,98 @@
+[{
+  "_id": {
+    "$oid": "65d5827778f0deb7a3414b1a"
+  },
+  "code": "JOY1234",
+  "nom": "Joystick Atari VCS",
+  "prix": {
+    "$numberDecimal": "40"
+  },
+  "quantite": 6,
+  "image": "/assets/img/atari.jpg",
+  "__v": 0,
+  "estEnStock": true
+},
+{
+  "_id": {
+    "$oid": "65d68ba299fe677abd2e230d"
+  },
+  "code": "PHO5566",
+  "nom": "Écouteurs sans fils",
+  "prix": {
+    "$numberDecimal": "35"
+  },
+  "quantite": 0,
+  "image": "/assets/img/headphone.webp",
+  "__v": 0,
+  "estEnStock": true
+},
+{
+  "_id": {
+    "$oid": "65d68ca599fe677abd2e2312"
+  },
+  "code": "SKA9987",
+  "nom": "Patins",
+  "prix": {
+    "$numberDecimal": "70"
+  },
+  "quantite": 0,
+  "image": "/assets/img/patins.webp",
+  "__v": 0,
+  "estEnStock": true
+},
+{
+  "_id": {
+    "$oid": "65d68cbe99fe677abd2e2317"
+  },
+  "code": "FRO4433",
+  "nom": "Frosted Flakes",
+  "prix": {
+    "$numberDecimal": "4.99"
+  },
+  "quantite": 0,
+  "image": "/assets/img/frostedflakes.png",
+  "__v": 0,
+  "estEnStock": true
+},
+{
+  "_id": {
+    "$oid": "65d68cd899fe677abd2e231c"
+  },
+  "code": "TOA0055",
+  "nom": "Grille-Pain",
+  "prix": {
+    "$numberDecimal": "35"
+  },
+  "quantite": 0,
+  "image": "/assets/img/grillepain.jpg",
+  "__v": 0,
+  "estEnStock": true
+},
+{
+  "_id": {
+    "$oid": "65d68cec99fe677abd2e2321"
+  },
+  "code": "ROL6541",
+  "nom": "Patins à roulettes",
+  "prix": {
+    "$numberDecimal": "68"
+  },
+  "quantite": 0,
+  "image": "/assets/img/patinsroulettes.png",
+  "__v": 0,
+  "estEnStock": true
+},
+{
+  "_id": {
+    "$oid": "65d6a12f1b9a1dc97b6405e7"
+  },
+  "code": "test",
+  "nom": "Marc-André",
+  "prix": {
+    "$numberDecimal": "420"
+  },
+  "quantite": 42,
+  "image": "/assets/img/magasin.png",
+  "estEnStock": false,
+  "__v": 0
+}]
