@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <TextView
+        android:id="@+id/txtTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/turn"
+        android:textSize="36sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout style="@style/row">
+
+            <ImageView
+                android:id="@+id/cell1"
+                style="@style/column" />
+
+            <View style="@style/verticalLine" />
+
+            <ImageView
+                android:id="@+id/cell2"
+                style="@style/column" />
+
+            <View style="@style/verticalLine" />
+
+            <ImageView
+                android:id="@+id/cell3"
+                style="@style/column" />
+
+        </LinearLayout>
+
+        <View style="@style/horizontalLine" />
+
+        <LinearLayout style="@style/row">
+
+            <ImageView
+                android:id="@+id/cell4"
+                style="@style/column" />
+
+            <View style="@style/verticalLine" />
+
+            <ImageView
+                android:id="@+id/cell5"
+                style="@style/column" />
+
+            <View style="@style/verticalLine" />
+
+            <ImageView
+                android:id="@+id/cell6"
+                style="@style/column" />
+
+        </LinearLayout>
+
+        <View style="@style/horizontalLine" />
+
+        <LinearLayout style="@style/row">
+
+            <ImageView
+                android:id="@+id/cell7"
+                style="@style/column" />
+
+            <View style="@style/verticalLine" />
+
+            <ImageView
+                android:id="@+id/cell8"
+                style="@style/column" />
+
+            <View style="@style/verticalLine" />
+
+            <ImageView
+                android:id="@+id/cell9"
+                style="@style/column" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnChanger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="210dp"
+        android:onClick="returnHome"
+        android:text="@string/changer_joueurs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="75dp"
+        android:enabled="false"
+        android:onClick="resetGameGrid"
+        android:text="@string/nouvelle_manche"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

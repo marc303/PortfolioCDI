@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="add_word">Add word</string>
+    <string name="hint_word">Nom du joueur...</string>
+    <string name="button_save">Save</string>
+    <string name="empty_not_saved">Player not saved because it is empty.</string>
+    <string name="turn">Turn ???</string>
+    <string name="changer_joueurs">Changer joueurs</string>
+    <string name="nouvelle_manche">Nouvelle manche</string>
+    <string name="nom_image">Nom Image</string>
+    <string name="image">Image</string>
+    <string name="d_marrer_la_partie">Démarrer la partie</string>
+    <string name="nom">Nom</string>
+    <string name="pointage">Pointage</string>
+    <string name="choisir_images">Choisir images</string>
+</resources>
