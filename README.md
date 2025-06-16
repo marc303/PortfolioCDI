@@ -14,10 +14,14 @@ A brief presentation of my portfolio containing my projects carried out during m
 
 Étant passioné dans le domaine de l'informatique depuis mon adolescence, c'est avec plaisir que je vous présente mes travaux conçus durant mon attestation d'études collégiales. Le programme fût principalement orienté Web et objet. Alors, la majorité de mes réalisations furent créées dans cet optique. Cependant, j'ai aussi pratiqué le développement d'applications mobiles avec Kotlin et la conception de programmes en Java. Dans la section qui suivra, je vais dresser une liste exhaustive des technologies, logiciels et services que j'ai utilisés:
 
-### Langages
+## English summary
+
+I've had a passion for computers since I was a teenager, so I'm pleased to present my work from my college diploma. The program was mainly Web and object-oriented. So most of my work was created with this in mind. However, I also practiced mobile application development with Kotlin and program design in Java. In the following section, I'll give an exhaustive list of the technologies, software and services I've used:
+
+### Langages/Languages
 
 - C#
-- ASP.NET MVC avec Entity Framework et LINQ
+- ASP.NET MVC avec/with Entity Framework et/and LINQ
 - HTML
 - CSS
 - Javascript
@@ -25,22 +29,22 @@ A brief presentation of my portfolio containing my projects carried out during m
 - Kotlin
 - Java
 
-### Base de données
+### Base de données/Databases
 
 - Transact-SQL (SQL Server Management Studio)
 - MySQL 
 - NoSQL (MongoDB)
 
-### Logiciels
+### Logiciels/Softwares
 
 - Visual Studio 2022
 - Visual Studio Code
 - Netbeans
 - Android Studio
+- Amazon Web Services
 
-### Autres
+### Autres/Others
 
 - Git
 - Scrum
 - Jira
-## English summary
