@@ -1,0 +1,33 @@
+﻿body {
+    background-color: #f5f5f5;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh;
+    align-items: center;
+    justify-items: center; /* adjusted */
+}
+
+.form-paiement {
+    width: 600px;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 600px;
+}
+
+.btn-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+    .btn-group > div {
+        margin-right: 10px;
+    }
