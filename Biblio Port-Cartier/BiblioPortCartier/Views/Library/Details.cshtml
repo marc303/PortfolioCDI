@@ -1,0 +1,14 @@
+﻿@using BiblioPortCartier.ViewModels;
+@model BiblioViewModel;
+
+@{
+    ViewData["Title"] = Model.Document.Title;
+    Layout = "~/Views/Shared/_LibraryLayout.cshtml";
+}
+
+<h2 class="text-center mt-5">Détails de l'oeuvre</h2>
+@Html.Partial("~/Views/Shared/_DocumentPagePartial.cshtml")
+<div asp-validation-summary="ModelOnly" class="text-danger mt-3"></div>
+<form method="post">
+    <button class="btn btn-primary mt-3 w-100"  asp-controller="Library" asp-action="Documents">Retour à la bibliothèque</button>
+</form>

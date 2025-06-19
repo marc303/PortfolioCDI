@@ -1,0 +1,14 @@
+﻿@using BiblioPortCartier.ViewModels;
+@model CreateEmployeeViewModel
+
+@Html.Partial("~/Views/Shared/_UserInfoFormPartial.cshtml")
+<div class="mb-3">
+    <label asp-for="HiredDate" class="form-label"></label>
+    <input asp-for="HiredDate" class="form-control" />
+    <span asp-validation-for="HiredDate" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label asp-for="Type" class="form-label"></label>
+    <select asp-for="Type" asp-items="ViewBag.TypeEmp" class="form-control"></select>
+    <span asp-validation-for="Type" class="text-danger"></span>
+</div>

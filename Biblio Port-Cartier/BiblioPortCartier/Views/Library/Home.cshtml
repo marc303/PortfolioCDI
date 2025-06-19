@@ -1,0 +1,21 @@
+﻿@using BiblioPortCartier.Models
+@model User
+@{
+    ViewData["Title"] = "Accueil";
+    Layout = "~/Views/Shared/_LibraryLayout.cshtml";
+}
+
+<div class="container-fluid text-center">
+    <div class="row justify-content-md-center align-content-md-center align-items-md-center min-vh-100">
+        <div class="col col-lg-1">
+
+        </div> 
+        <div class="col-md-auto">
+            <h1 class="display-3">Bonjour @Model.FullName,</h1>
+            <p class="display-6">Bienvenue à la bibliothèque municipale de Port-Cartier,</p>
+            <p>Pour consulter nos documents, faire des emprunts et/ou des réservations... <a asp-controller="Library" asp-action="Documents">Explorer notre bibliothèque.</a></p>
+        </div>
+        <div class="col col-lg-1">
+        </div> 
+    </div>
+</div>

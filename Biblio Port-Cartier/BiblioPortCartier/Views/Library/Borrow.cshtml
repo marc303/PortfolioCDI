@@ -1,0 +1,45 @@
+﻿@using BiblioPortCartier.ViewModels;
+@model BiblioViewModel;
+
+@{
+    ViewData["Title"] = Model.Document.Title;
+    Layout = "~/Views/Shared/_LibraryLayout.cshtml";
+}
+
+<h2 class="text-center mt-5">Emprunter cette oeuvre : </h2>
+@Html.Partial("~/Views/Shared/_DocumentPagePartial.cshtml")
+<div asp-validation-summary="ModelOnly" class="text-danger mt-3"></div>
+<form method="post">
+    <div class="row mt-3">
+        <div class="col-2 text-center">
+            <label asp-for="BorrowedDate" class="form-label"></label>
+        </div>
+        <div class="col-10">
+            <input asp-for="BorrowedDate" class="form-control" />
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-2 text-center">
+            <label asp-for="ScheduledReturnDate" class="form-label"></label>
+        </div>
+        <div class="col-10">
+            <input asp-for="ScheduledReturnDate" class="form-control" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <button class="btn btn-primary mt-5 m-2 w-100" asp-controller="Library" asp-action="Borrow">Confirmer l'emprunt</button>
+        </div>
+        <div class="col-6">
+            <button class="btn btn-primary mt-5 m-2 w-100" asp-controller="Library" asp-action="Documents">Retour</button>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial.cshtml");
+    }
+}
