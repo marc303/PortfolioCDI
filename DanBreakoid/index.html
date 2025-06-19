@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="js/ressources.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik+Mono+One"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/anime.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/components.js" defer></script>
+    <script src="js/paddle.js" defer></script>
+    <script src="js/ball.js" defer></script>
+    <script src="js/brick.js" defer></script>
+    <script src="js/collisions.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/game.js" defer></script>
+    <title>DanBreakoid</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="header">
+        <canvas id="header"></canvas>
+      </div> -->
+      <div class="game">
+        <canvas id="gameCanvas" width="1100" height="720"></canvas>
+        <!-- LOADING SCREEN -->
+        <progress id="loadingBar" value="0" max="100"></progress>
+        <p id="txtLoading">Loading...</p>
+        <!-- GAME OVER SCREEN -->
+        <img id="laugh" src="img/rire.png" alt="" />
+        <p id="gameover_french">PARTIE TERMINÉE</p>
+        <p id="gameover_english">GAME OVER</p>
+        <!-- VIcTORY SCREEN -->
+        <img id="victory" src="img/succes.png" alt="" />
+        <p id="lvlText">NIVEAU <span id="lvlNo"></span></p>
+        <p id="stateText">RÉUSSI !!!</p>
+        <img src="img/btnStart.png" alt="" id="pressStart" />
+      </div>
+      <div class="details">
+        <p class="details_text">VIES:</p>
+        <!-- <canvas id="gameDetails" height="720"></canvas> -->
+        <div id="lifebar"></div>
+        <p class="details_text details_score">SCORE:</p>
+        <p id="score">0</p>
+      </div>
+    </div>
+  </body>
+</html>
