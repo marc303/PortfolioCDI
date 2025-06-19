@@ -1,9 +1,0 @@
-﻿@using BiblioPortCartier.ViewModels;
-@model CreateMemberViewModel;
-
-@Html.Partial("~/Views/Shared/_UserInfoFormPartial.cshtml")
-<div class="mb-3">
-    <label asp-for="BirthdayDate" class="form-label"></label>
-    <input asp-for="BirthdayDate" class="form-control" />
-    <span asp-validation-for="BirthdayDate" class="text-danger"></span>
-</div>
