@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+    <title>Jeu Trouve-Couleurs</title>
+  </head>
+  <body onload="init();">
+    <header>
+      <div id="title">
+        <h1>Trouve-Couleurs</h1>
+      </div>
+    </header>
+    <section id="main"></section>
+    <script type="text/template" id="init">
+       <div id="game" hidden>
+        <h2>Trouvez les couleurs</h2>
+        <div id="mystery">
+          <div class="mystery circle"><p>?</p></div>
+          <div class="mystery circle"><p>?</p></div>
+          <div class="mystery circle"><p>?</p></div>
+        </div>
+        <div id="playable">
+          <div
+            class="blue circle"
+            value="blue"
+            onclick="changeColor(this);"
+          ></div>
+          <div
+            class="blue circle"
+            value="blue"
+            onclick="changeColor(this);"
+          ></div>
+          <div
+            class="blue circle"
+            value="blue"
+            onclick="changeColor(this);"
+          ></div>
+        </div>
+      </div>
+      <div id="action">
+        <button id="verify" type="button" onclick="verifyOrder();" hidden>
+          Vérifier jetons
+        </button>
+        <button id="new" type="button" onclick="newGame();">
+          Nouvelle partie
+        </button>
+        <h3>Couleur(s) correcte(s): <span id="correct">-</span></h3>
+        <h3>Tentative(s) restante(s): <span id="attempt">-</span></h3>
+        <!-- <button id="start" type="button">Commencez une partie</button> -->
+      </div>
+    </script>
+  </body>
+</html>
