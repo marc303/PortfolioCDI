@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jeupendu.MainController">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="1024.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Options">
+            <items>
+              <MenuItem mnemonicParsing="false" text="À propos de" />
+                  <MenuItem fx:id="quitterMenu" mnemonicParsing="false" text="Quitter" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Polygon layoutX="123.0" layoutY="570.0" points="-57.0, 40.0, 30.0, 40.0, -14.0, 16.0" stroke="WHITE" strokeType="INSIDE" />
+      <Button layoutX="194.0" layoutY="662.0" mnemonicParsing="false" onAction="#btnDebuterJeu" text="Débuter le jeu">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Line endX="-49.5" endY="179.0" layoutX="159.0" layoutY="407.0" startX="-49.5" startY="-301.0" strokeWidth="10.0" />
+      <Line endX="124.0" layoutX="214.0" layoutY="106.0" startX="-100.0" strokeWidth="10.0" />
+      <Line endX="131.0" endY="62.0" layoutX="60.0" layoutY="49.0" startX="52.5" startY="200.0" strokeWidth="10.0" />
+      <Line endX="233.0" endY="142.0" layoutX="105.0" layoutY="-26.0" startX="233.0" startY="200.0" strokeWidth="10.0" />
+      <Circle fx:id="penduTete" fill="WHITE" layoutX="338.0" layoutY="215.0" radius="36.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Line fx:id="penduCorps" endX="100.0" layoutX="238.0" layoutY="252.0" startX="100.0" startY="171.0" visible="false" />
+      <Line fx:id="penduJambe1" endX="102.5" endY="-7.0" layoutX="236.0" layoutY="428.0" startX="18.0" startY="117.0" visible="false" />
+      <Line fx:id="penduBras1" endX="102.5" endY="-7.0" layoutX="323.0" layoutY="282.0" rotate="110.0" startX="18.0" startY="117.0" visible="false" />
+      <Line fx:id="penduBras2" endX="102.5" endY="-7.0" layoutX="235.0" layoutY="282.0" startX="18.0" startY="117.0" visible="false" />
+      <Line fx:id="penduJambe2" endX="102.5" endY="-7.0" layoutX="323.0" layoutY="428.0" rotate="110.0" startX="18.0" startY="117.0" visible="false" />
+      <VBox layoutX="512.0" layoutY="25.0" prefHeight="744.0" prefWidth="513.0" spacing="14.0">
+         <children>
+            <Label text="Nom du Joueur :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtJoueur" alignment="CENTER" disable="true" prefHeight="46.0" prefWidth="484.0" text="-">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <Label text="Score :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtScore" alignment="CENTER" disable="true" prefHeight="46.0" prefWidth="484.0" text="-">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <Label text="Trouver le mot :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtMot" alignment="CENTER" disable="true" prefHeight="46.0" prefWidth="484.0" text="-">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <HBox prefHeight="60.0" prefWidth="485.0" spacing="14.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#btnLettreSelect" prefHeight="50.0" prefWidth="60.0" text="a">
+                     <HBox.margin>
+                        <Insets left="4.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#btnLettreSelect" prefHeight="50.0" prefWidth="60.0" text="b">
+                     <HBox.margin>
+                        <Insets left="4.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#btnLettreSelect" prefHeight="50.0" prefWidth="60.0" text="c">
+                     <HBox.margin>
+                        <Insets left="4.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#btnLettreSelect" prefHeight="50.0" prefWidth="60.0" text="d">
+                     <HBox.margin>
+                        <Insets left="4.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#btnLettreSelect" prefHeight="50.0" prefWidth="60.0" text="e">
+                     <HBox.margin>
+                        <Insets left="4.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#btnLettreSelect" prefHeight="50.0" prefWidth="60.0" text="f">
+                     <HBox.margin>
+                        <Insets left="6.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="60.0" prefWidth="485.0" spacing="14.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#btnLettreSelect" prefHeight="50.0" prefWidth="60.0" text="g">
+                     <HBox.margin>
+                        <Insets left="4.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#btnLettreSelect" prefHeight="50.0" prefWidth="60.0" text="h">
+                     <HBox.margin>
+                        <Insets left="4.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#btnLettreSelect" prefHeight="50.0" prefWidth="60.0" text="i">
+                     <HBox.margin>
+                        <Insets left="4.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#btnLettreSelect" prefHeight="50.0" prefWidth="60.0" text="j">
+                     <HBox.margin>
+                        <Insets left="4.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#btnLettreSelect" prefHeight="50.0" prefWidth="60.0" text="k">
+                     <HBox.margin>
+                        <Insets left="4.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#btnLettreSelect" prefHeight="50.0" prefWidth="60.0" text="l">
+                     <HBox.margin>
+                        <Insets left="6.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="60.0" prefWidth="485.0" spacing="14.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#btnLettreSelect" prefHeight="50.0" prefWidth="60.0" text="m">
+                     <HBox.margin>
+                        <Insets left="4.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#btnLettreSelect" prefHeight="50.0" prefWidth="60.0" text="n">
+                     <HBox.margin>
+                        <Insets left="4.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#btnLettreSelect" prefHeight="50.0" prefWidth="60.0" text="o">
+                     <HBox.margin>
+                        <Insets left="4.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#btnLettreSelect" prefHeight="50.0" prefWidth="60.0" text="p">
+                     <HBox.margin>
+                        <Insets left="4.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#btnLettreSelect" prefHeight="50.0" prefWidth="60.0" text="q">
+                     <HBox.margin>
+                        <Insets left="4.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#btnLettreSelect" prefHeight="50.0" prefWidth="60.0" text="r">
+                     <HBox.margin>
+                        <Insets left="6.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="60.0" prefWidth="485.0" spacing="14.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#btnLettreSelect" prefHeight="50.0" prefWidth="60.0" text="s">
+                     <HBox.margin>
+                        <Insets left="4.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#btnLettreSelect" prefHeight="50.0" prefWidth="60.0" text="t">
+                     <HBox.margin>
+                        <Insets left="4.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#btnLettreSelect" prefHeight="50.0" prefWidth="60.0" text="u">
+                     <HBox.margin>
+                        <Insets left="4.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#btnLettreSelect" prefHeight="50.0" prefWidth="60.0" text="v">
+                     <HBox.margin>
+                        <Insets left="4.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#btnLettreSelect" prefHeight="50.0" prefWidth="60.0" text="w">
+                     <HBox.margin>
+                        <Insets left="4.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#btnLettreSelect" prefHeight="50.0" prefWidth="60.0" text="x">
+                     <HBox.margin>
+                        <Insets left="6.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="60.0" prefWidth="485.0" spacing="14.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#btnLettreSelect" prefHeight="50.0" prefWidth="60.0" text="y">
+                     <HBox.margin>
+                        <Insets left="4.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#btnLettreSelect" prefHeight="50.0" prefWidth="60.0" text="z">
+                     <HBox.margin>
+                        <Insets left="4.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />
+         </padding></VBox>
+   </children>
+   <padding>
+      <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />
+   </padding>
+</Pane>
