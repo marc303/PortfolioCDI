@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/traits.css" />
+    <script src="../javascript/script.js"></script>
+    <title>Astrologie Orion</title>
+  </head>
+  <body onload="modifiedLast()">
+    <header>
+      <div class="logo">
+        <img src="../img/logo-no-background.png" alt="Logo Astrologie Orion" />
+      </div>
+    </header>
+    <div class="navbar">
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="chara.html">Charactéristiques des signes</a></li>
+        <li><a class="active">Traits des signes</a></li>
+        <li><a href="form.html">Horoscope du jour</a></li>
+        <li><a href="mailto:proprietaire@info_orion.ca">Contactez-nous</a></li>
+        <li>
+          <form>
+            <input type="text" placeholder="Recherche.." name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </li>
+      </ul>
+    </div>
+    <section>
+      <div class="sidebar">
+        <nav>
+          <h4>Consultez un signe</h4>
+          <ul>
+            <li>
+              <a href="signes/belier.html"
+                ><img src="../img/glyphs/Belier.gif" class="icon" />Bélier</a
+              >
+            </li>
+            <li>
+              <a href="signes/taureau.html"
+                ><img src="../img/glyphs/Taureau.gif" class="icon" />Taureau</a
+              >
+            </li>
+            <li>
+              <a href="signes/gemeaux.html"
+                ><img src="../img/glyphs/Gemeaux.gif" class="icon" />Gémeaux</a
+              >
+            </li>
+            <li>
+              <a href="signes/cancer.html"
+                ><img src="../img/glyphs/CANCER.gif" class="icon" />Cancer</a
+              >
+            </li>
+            <li>
+              <a href="signes/lion.html"
+                ><img src="../img/glyphs/Leo.gif" class="icon" />Lion</a
+              >
+            </li>
+            <li>
+              <a href="signes/vierge.html"
+                ><img src="../img/glyphs/Vierge.gif" class="icon" />Vierge</a
+              >
+            </li>
+            <li>
+              <a href="signes/balance.html"
+                ><img src="../img/glyphs/Balance.gif" class="icon" />Balance</a
+              >
+            </li>
+            <li>
+              <a href="signes/scorpion.html"
+                ><img
+                  src="../img/glyphs/Scorpion.gif"
+                  class="icon"
+                />Scorpion</a
+              >
+            </li>
+            <li>
+              <a href="signes/sagittaire.html"
+                ><img
+                  src="../img/glyphs/Sagittaire.gif"
+                  class="icon"
+                />Sagittaire</a
+              >
+            </li>
+            <li>
+              <a href="signes/capricorne.html"
+                ><img
+                  src="../img/glyphs/Capricorne.gif"
+                  class="icon"
+                />Capricorne</a
+              >
+            </li>
+            <li>
+              <a href="signes/verseau.html"
+                ><img src="../img/glyphs/Verseau.gif" class="icon" />Verseau</a
+              >
+            </li>
+            <li>
+              <a href="signes/poisson.html"
+                ><img src="../img/glyphs/Poisson.gif" class="icon" />Poissons</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <img id="wheel" src="../img/wheel.png" alt="12 signes du zodiaque" />
+      </div>
+      <main>
+        <table>
+          <tr>
+            <th colspan="3">Traits des signes</th>
+          </tr>
+          <tr>
+            <td>
+              <div class="tabheader">
+                <img src="../img/glyphs/Belier.gif" alt="Glyphe du Bélier" />
+                <p>Bélier : 21 mars - 20 avril</p>
+              </div>
+              <div class="trait">
+                <dl>
+                  <dt>Qualités:</dt>
+                  <dd>Spontané</dd>
+                  <dd>Meneur</dd>
+                  <dd>Sincère, franc, honnête</dd>
+                </dl>
+                <br />
+                <dl>
+                  <dt>Défauts:</dt>
+                  <dd>Impatient</dd>
+                  <dd>Impulsif</dd>
+                  <dd>Mauvaise foi</dd>
+                </dl>
+              </div>
+            </td>
+            <td>
+              <div class="tabheader">
+                <img src="../img/glyphs/Taureau.gif" alt="Glyphe du Taureau" />
+                <p>Taureau : 21 avril - 21 mai</p>
+              </div>
+              <div class="trait">
+                <dl>
+                  <dt>Qualités:</dt>
+                  <dd>Déterminé</dd>
+                  <dd>Fidèle</dd>
+                  <dd>Patient</dd>
+                </dl>
+                <br />
+                <dl>
+                  <dt>Défauts:</dt>
+                  <dd>Entêté</dd>
+                  <dd>Rancunier</dd>
+                  <dd>Jaloux</dd>
+                </dl>
+              </div>
+            </td>
+            <td>
+              <div class="tabheader">
+                <img src="../img/glyphs/Gemeaux.gif" alt="Glyphe du Taureau" />
+                <p>Gémeaux : 22 mai - 21 juin</p>
+              </div>
+              <div class="trait">
+                <dl>
+                  <dt>Qualités:</dt>
+                  <dd>Curieux</dd>
+                  <dd>Empathique</dd>
+                  <dd>Ouvert d'esprit</dd>
+                </dl>
+                <br />
+                <dl>
+                  <dt>Défauts:</dt>
+                  <dd>Lâche</dd>
+                  <dd>Manipulateur</dd>
+                  <dd>Sarcastique</dd>
+                </dl>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="tabheader">
+                <img src="../img/glyphs/CANCER.gif" alt="Glyphe du Cancer" />
+                <p>Cancer : 22 juin - 22 juillet</p>
+              </div>
+              <div class="trait">
+                <dl>
+                  <dt>Qualités:</dt>
+                  <dd>Tolérant</dd>
+                  <dd>Calme, pacifiste</dd>
+                  <dd>Créatif</dd>
+                </dl>
+                <br />
+                <dl>
+                  <dt>Défauts:</dt>
+                  <dd>Capricieux</dd>
+                  <dd>Susceptible</dd>
+                  <dd>Hypersensible</dd>
+                </dl>
+              </div>
+            </td>
+            <td>
+              <div class="tabheader">
+                <img src="../img/glyphs/Leo.gif" alt="Glyphe du Lion" />
+                <p>Lion : 23 juillet - 22 août</p>
+              </div>
+              <div class="trait">
+                <dl>
+                  <dt>Qualités:</dt>
+                  <dd>Généreux</dd>
+                  <dd>Organisé</dd>
+                  <dd>Indépendant</dd>
+                </dl>
+                <br />
+                <dl>
+                  <dt>Défauts:</dt>
+                  <dd>Autoritaire</dd>
+                  <dd>Orgueilleux</dd>
+                  <dd>Vantard</dd>
+                </dl>
+              </div>
+            </td>
+            <td>
+              <div class="tabheader">
+                <img src="../img/glyphs/Vierge.gif" alt="Glyphe de la Vierge" />
+                <p>Vierge : 23 août - 22 septembre</p>
+              </div>
+              <div class="trait">
+                <dl>
+                  <dt>Qualités:</dt>
+                  <dd>Intelligent</dd>
+                  <dd>Dévoué</dd>
+                  <dd>Altruiste</dd>
+                </dl>
+                <br />
+                <dl>
+                  <dt>Défauts:</dt>
+                  <dd>Autisociable</dd>
+                  <dd>Sceptique</dd>
+                  <dd>Perfectionniste</dd>
+                </dl>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="tabheader">
+                <img
+                  src="../img/glyphs/Balance.gif"
+                  alt="Glyphe de la Balance"
+                />
+                <p>Balance : 23 septembre - 22 octobre</p>
+              </div>
+              <div class="trait">
+                <dl>
+                  <dt>Qualités:</dt>
+                  <dd>Bienveillant</dd>
+                  <dd>Sociable</dd>
+                  <dd>Humoristique</dd>
+                </dl>
+                <br />
+                <dl>
+                  <dt>Défauts:</dt>
+                  <dd>Indécis</dd>
+                  <dd>Dépendant</dd>
+                  <dd>Paresseux</dd>
+                </dl>
+              </div>
+            </td>
+            <td>
+              <div class="tabheader">
+                <img
+                  src="../img/glyphs/Scorpion.gif"
+                  alt="Glyphe du Scorpion"
+                />
+                <p>Scorpion : 23 octobre - 22 novembre</p>
+              </div>
+              <div class="trait">
+                <dl>
+                  <dt>Qualités:</dt>
+                  <dd>Fidèle</dd>
+                  <dd>Passioné</dd>
+                  <dd>Rêveur</dd>
+                </dl>
+                <br />
+                <dl>
+                  <dt>Défauts:</dt>
+                  <dd>Agressif</dd>
+                  <dd>Manipulateur</dd>
+                  <dd>Possessif</dd>
+                </dl>
+              </div>
+            </td>
+            <td>
+              <div class="tabheader">
+                <img
+                  src="../img/glyphs/Sagittaire.gif"
+                  alt="Glyphe du Sagittaire"
+                />
+                <p>Sagittaire : 23 novembre - 21 décembre</p>
+              </div>
+              <div class="trait">
+                <dl>
+                  <dt>Qualités:</dt>
+                  <dd>Optimiste</dd>
+                  <dd>Aventurier</dd>
+                  <dd>Généreux</dd>
+                </dl>
+                <br />
+                <dl>
+                  <dt>Défauts:</dt>
+                  <dd>Impatient</dd>
+                  <dd>Négligent</dd>
+                  <dd>Compétitif</dd>
+                </dl>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="tabheader">
+                <img
+                  src="../img/glyphs/Capricorne.gif"
+                  alt="Glyphe du Capricorne"
+                />
+                <p>Capricorne : 22 décembre - 20 janvier</p>
+              </div>
+              <div class="trait">
+                <dl>
+                  <dt>Qualités:</dt>
+                  <dd>Ambitieux</dd>
+                  <dd>Responsable</dd>
+                  <dd>Modeste</dd>
+                </dl>
+                <br />
+                <dl>
+                  <dt>Défauts:</dt>
+                  <dd>Pessimisme</dd>
+                  <dd>Avare</dd>
+                  <dd>Froid</dd>
+                </dl>
+              </div>
+            </td>
+            <td>
+              <div class="tabheader">
+                <img src="../img/glyphs/Verseau.gif" alt="Glyphe du Verseau" />
+                <p>Verseau : 21 janvier - 19 février</p>
+              </div>
+              <div class="trait">
+                <dl>
+                  <dt>Qualités:</dt>
+                  <dd>Original</dd>
+                  <dd>Spontané</dd>
+                  <dd>Intègre</dd>
+                </dl>
+                <br />
+                <dl>
+                  <dt>Défauts:</dt>
+                  <dd>Individuel</dd>
+                  <dd>Arrogant</dd>
+                  <dd>Instable</dd>
+                </dl>
+              </div>
+            </td>
+            <td>
+              <div class="tabheader">
+                <img src="../img/glyphs/Poisson.gif" alt="Glyphe du Poisson" />
+                <p>Poissons : 20 février - 20 mars</p>
+              </div>
+              <div class="trait">
+                <dl>
+                  <dt>Qualités:</dt>
+                  <dd>Dévoué</dd>
+                  <dd>Loyal</dd>
+                  <dd>Empathique</dd>
+                </dl>
+                <br />
+                <dl>
+                  <dt>Défauts:</dt>
+                  <dd>Hypersensible</dd>
+                  <dd>Naïf</dd>
+                  <dd>Nonchalant</dd>
+                </dl>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </main>
+    </section>
+    <footer>
+      <p>Ce document a été modifié en dernier le: <span id="date"></span></p>
+      <p id="copyright">&copy; 2022 Astrologie Orion</p>
+    </footer>
+  </body>
+</html>
